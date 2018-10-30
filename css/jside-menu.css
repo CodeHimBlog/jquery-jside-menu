@@ -27,9 +27,12 @@ body{
 -moz-osx-font-smoothing: grayscale;
 
 }
+html{
+	-webkit-font-smoothing: antialiased;}
+		
 :root{
     --skin-hover: rgba(0, 0, 0, 0.1); 
-    --skin-color:  rgba(255, 255, 255, 0.9);
+    --skin-color:  rgba(255, 255, 255, 0.7);
 }
 .default-skin{
   font-family: 'Helvetica Neue';
@@ -76,8 +79,10 @@ body{
 }
 
 .menu-trigger:before{
-   font-family: 'Material-Design-Iconic-Font';
-  content: '\f197'; 
+   font-family: 'Material-Design-Iconic-Font';
+
+  content: '\f197';
+ 
    font-size: 22pt;
    
 }
@@ -212,51 +217,83 @@ body{
 }
 
 /* Dropdowns */
-.has-sub ul{
-   list-style: none;
-   overflow: hidden;
-   height: 0px;
-   transition: .360s;
+.has-sub ul{
+
+   list-style: none;
+
+   overflow: hidden;
+
+   height: 0px;
+
+   transition: .360s;
+
    background: #f2f9f9;
-}
-
-.has-sub ul li a{
-   display: block;
-   padding: 12px 33px;
-   border-bottom: 0;
+}
+
+
+
+.has-sub ul li a{
+
+   display: block;
+
+   padding: 12px 33px;
+
+   border-bottom: 0;
+
    font-size: 13px;
    color: #444;
    transition: .1s;
    -webkit-transition: .1s;
    border-bottom: 1px dotted #e1e1e1;
-}
+}
+
 .has-sub ul li a:hover{
    background: #dedede;
    transition: .1s;
  -webkit-transition: .1s;
 }
 
-.has-sub span{
-  display: block;
-  box-sizing: border-box;
-  
-}
-
-.has-sub i.arrow{
-   float: right;
-   margin-right: 10px;  
-   transition: 0.360s;
+.has-sub span{
+
+  display: block;
+
+  box-sizing: border-box;
+
+  
+
+}
+
+
+
+.has-sub i.arrow{
+
+   float: right;
+
+   margin-right: 10px;  
+
+   transition: 0.360s;
+
    font-size: 16px;
-}
-
-.has-sub .arrowdown{
-   transform: rotateZ(180deg);
--webkit-transform: rotateZ(180deg);
--moz-transform: rotateZ(180deg);
-   transition: 0.360s;
- -webkit-transition: 0.360s;
- -moz-transition: 0.360s;
-} 
+}
+
+
+
+.has-sub .arrowdown{
+
+   transform: rotateZ(180deg);
+
+-webkit-transform: rotateZ(180deg);
+
+-moz-transform: rotateZ(180deg);
+
+   transition: 0.360s;
+
+ -webkit-transition: 0.360s;
+
+ -moz-transition: 0.360s;
+
+}
+ 
 .col{
     display: table;
    
