@@ -27,9 +27,12 @@ body{
 -moz-osx-font-smoothing: grayscale;
 
 }
+html{
+	-webkit-font-smoothing: antialiased;}
+		
 :root{
     --skin-hover: rgba(0, 0, 0, 0.1); 
-    --skin-color:  rgba(255, 255, 255, 0.9);
+    --skin-color:  rgba(255, 255, 255, 0.7);
 }
 .default-skin{
   font-family: 'Helvetica Neue';
@@ -104,6 +107,23 @@ body{
    top: 120px;
    
 }
+
+.menu-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.menu-container::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+.menu-container::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+.menu-container::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 .position-left{
    left: -270px;
 }
