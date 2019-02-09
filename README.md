@@ -1,7 +1,7 @@
 # jquery-jside-menu
 jSide Menu is a well designed, simple and clean side navigation menu with dropdowns. 
 
-Browse: [Live Demo & Using Guide](https://codehimblog.github.io/jquery-jside-menu/)
+Browse: [Live Demo & Using Guide](https://www.codehim.com/demo/jquery-jside-menu/)
 
 ## Main Features
 * Fully Responsive and Customizable.
