@@ -107,6 +107,23 @@ html{
    top: 120px;
    
 }
+
+.menu-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.menu-container::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+.menu-container::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+.menu-container::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 .position-left{
    left: -270px;
 }
