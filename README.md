@@ -19,7 +19,7 @@ Browse: [Live Demo & Using Guide](https://codehimblog.github.io/jquery-jside-men
 * User Friendly and Easy to Implement.
 
 ## jSide Preview
-<img src="https://4.bp.blogspot.com/-l1wNZBo2Cwk/W-rqoODkQAI/AAAAAAAABzE/UOoaq2Ipac8u5mDmsUk5I0wXzxaQgfPGACPcBGAYYCw/s1600/jside-menu-preview.jpg">
+<img src="img/preview.jpg">
 
 ## Author
 Asif Mughal <br />
