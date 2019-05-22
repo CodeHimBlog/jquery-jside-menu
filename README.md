@@ -5,7 +5,7 @@ jSide Menu is a well designed, simple and clean side navigation menu with dropdo
 [![Dependency Status](https://david-dm.org/boennemann/badges.svg)](https://david-dm.org/boennemann/badges)
 [![Code Climate](https://codeclimate.com/github/boennemann/badges.svg)](https://codeclimate.com/github/boennemann/badges)
 
-Browse: [Live Demo & Using Guide](https://www.codehim.com/demo/jquery-jside-menu/)
+Browse: [Live Demo & Using Guide](https://codehimblog.github.io/jquery-jside-menu/)
 
 ## Main Features
 * Fully Responsive and Customizable.
