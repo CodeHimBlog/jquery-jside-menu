@@ -7,36 +7,15 @@
  *   Copyright (c) 2019 - Asif Mughal
  */
 /* File: jquery.jside-menu.css */
-@font-face {
-  font-family: 'Helvetica Neue';
-  font-style: normal;
-  font-weight: 300;
-  font-smoothing: antialiased;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-  src: local('Helvetica Neue'), local('HelveticaNeue'), url(http://themes.googleusercontent.com/licensed/font?kit=Lx1xfUTR4qFjwg0Z_pb900DGSpWewu0sZH-jqLz8Q00) format('truetype');
-}
-*{ margin: 0;
-    padding: 0;
-}
-body{
-  font-family: 'Helvetica Neue';
-  font-weight: 300;
-  font-smoothing: antialiased;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
 
-}
-html{
-	-webkit-font-smoothing: antialiased;}
-		
 :root{
     --skin-hover: rgba(0, 0, 0, 0.1); 
     --skin-color:  rgba(255, 255, 255, 0.7);
 }
 .default-skin{
-  font-family: 'Helvetica Neue';
+  font-family: 'Questrial', sans-serif;
   font-weight: 300;
+  font-size: 14px;
   font-smoothing: antialiased;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
@@ -65,7 +44,7 @@ html{
    border: 0;
    outline: 0;
    background: transparent;
-   top: 6px;
+   top: 10px;
    padding: 0 5px;
    color: var(--skin-color);
    cursor: pointer;
@@ -78,14 +57,6 @@ html{
 -webkit-opacity: 0.8;
 }
 
-.menu-trigger:before{
-   font-family: 'Material-Design-Iconic-Font';
-
-  content: '\f197';
- 
-   font-size: 22pt;
-   
-}
 
 .menu-trigger.left{
    left: 20px;
@@ -102,6 +73,7 @@ html{
 }
 
 .menu-container{
+  font-family: 'Questrial', sans-serif;
    overflow: auto;
    display: block;
    top: 120px;
@@ -109,15 +81,15 @@ html{
 }
 
 .menu-container::-webkit-scrollbar {
-  width: 10px;
+  width: 4px;
 }
 
 .menu-container::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: rgba(255, 255, 255, 0.2); 
 }
  
 .menu-container::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: rgba(0, 0, 0, 0.11); 
 }
 
 .menu-container::-webkit-scrollbar-thumb:hover {
@@ -156,7 +128,7 @@ html{
 .menu-head{
     background: var(--skin);
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
     width: 270px;
     
 }
@@ -183,7 +155,7 @@ html{
 .dropdown-heading,
 .menu-items li a{
    text-decoration: none;
-   padding: 12px 12px 12px 45px;
+   padding: 10px;
    display: block;
    color: var(--skin-color);
    border-bottom: 1px dotted rgba(255, 255, 255, 0.050);
@@ -192,6 +164,11 @@ html{
    user-select: none;
   -webkit-user-select: none;
 }
+/* Icon Style */
+.menu-items li i{
+   font-size: 16px;
+   margin-right: 10px;
+ }
 .dropdown-heading{
   -webkit-tap-highlight-color: transparent;
 }
@@ -224,31 +201,12 @@ html{
    }
 }
 
-.item-icon{
-   margin: 0 25px 0 0;
-   display: inline;
-   width: 32px;
-   height: 32px;
-   line-height: 32px;
-   position: absolute;
-   font-size: 15pt;
-  margin: 5px;
-   text-align: center;
-   color: var(--skin-color);
-  
-}
 
 /* Dropdowns */
 .has-sub ul{
-
    list-style: none;
-
    overflow: hidden;
-
-   height: 0px;
-
-   transition: .360s;
-
+   display: none;
    background: #f2f9f9;
 }
 
@@ -287,31 +245,21 @@ html{
 
 
 
-.has-sub i.arrow{
-
+.has-sub i.d-arrow{
    float: right;
-
    margin-right: 10px;  
-
    transition: 0.360s;
-
    font-size: 16px;
 }
 
 
 
-.has-sub .arrowdown{
-
+.has-sub .d-arrow.d-down{
    transform: rotateZ(180deg);
-
 -webkit-transform: rotateZ(180deg);
-
 -moz-transform: rotateZ(180deg);
-
    transition: 0.360s;
-
  -webkit-transition: 0.360s;
-
  -moz-transition: 0.360s;
 
 }
@@ -371,7 +319,7 @@ html{
 
 .dim-overlay:before {
 	content: "";
-	background-color: rgba(0, 0, 10, .4);
+	background-color: rgba(0, 0, 0, .4);
 	height: 100vh;
 	left: 0;
 	position: fixed;
