@@ -68,6 +68,7 @@ $(dHeading).click(function(){
 $(menuTrigger).click(function(){
    $(jSide).toggleClass("open");
    $(dimBackground).show(setting.jSideTransition);
+   $(".menu-body").removeClass("visibility");
 });
 
 //close menu if user click outside of it
@@ -81,6 +82,7 @@ $(menuTrigger).click(function(){
     if (!$(jSide).hasClass("open")) {
      $(dimBackground).hide(setting.jSideTransition);
         }
+ $(".menu-body").addClass("visibility");
       });
    });
  };
