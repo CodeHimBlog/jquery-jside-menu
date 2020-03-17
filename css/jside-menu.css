@@ -28,7 +28,9 @@
    --skin-hover: #ddd; 
    --skin-color:  #232323;
 }
-
+.menu-body.visibility{
+  visibility: hidden;
+}
 .menubar{
    width: 100%;
    height: 48px;
