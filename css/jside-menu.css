@@ -16,7 +16,7 @@
   font-family: 'Questrial', sans-serif;
   font-weight: 300;
   font-size: 14px;
-  font-smoothing: antialiased;
+  font-smooth: antialiased;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
    --skin: #2a2a2e;
@@ -192,7 +192,7 @@
     -webkit-opacity: 1;
    }
 }
--webkit-@keyframes fadeIn{
+@-webkit-keyframes fadeIn{
    from{
      opacity: 0;
     -webkit-opacity: 0;
